@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity(),
 
     override fun onQueryTextSubmit(query: String?): Boolean {
         if(!query.isNullOrEmpty()){
-
+            searchByName(query.lowercase())
         }
         return true
     }
